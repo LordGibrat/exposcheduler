@@ -1,0 +1,166 @@
+[
+  {
+    "id": "problem",
+    "kicker": "QAIRU / AI FUNDAMENTALS",
+    "title": "Your next idea needs a place.",
+    "subtitle": "Expo Smart Scheduler",
+    "bullets": [
+      "Find a room, an iMac or an auditorium.",
+      "Coordinate competing requests and explain the choice.",
+      "23 synthetic resources across eight represented floors."
+    ],
+    "note": "Campus scheduling simulation. Data, probabilities, routes and utilities are assumptions.",
+    "url": "https://expo-smart-scheduler.vercel.app/find.html"
+  },
+  {
+    "id": "interfaces",
+    "kicker": "01 / TWO CONNECTED INTERFACES",
+    "title": "An easy front door. A deeper AI workspace.",
+    "subtitle": "One engine, two ways to use it",
+    "bullets": [
+      "Find a space: search, result, review, confirm.",
+      "AI workspace: plan a batch, compare first fit, explore the models.",
+      "Both use the same engine and simulation calendar in the same storage context."
+    ],
+    "note": "Local: SQLite on one computer. Public: one browser profile on the same origin, not a shared university calendar."
+  },
+  {
+    "id": "methods",
+    "kicker": "02 / SIX AIF METHODS",
+    "title": "Six methods. A specific job for each.",
+    "subtitle": "Observable reasoning, with a clear scope",
+    "methods": [
+      {
+        "name": "Constraint satisfaction",
+        "short": "CSP",
+        "body": "Check time, capacity, equipment, access and room\u2013computer conflicts.",
+        "scope": "Feasibility"
+      },
+      {
+        "name": "Hill climbing",
+        "short": "LOCAL SEARCH",
+        "body": "Five seeded starts; accept improving single or pair moves.",
+        "scope": "Ranking"
+      },
+      {
+        "name": "A* graph search",
+        "short": "A*",
+        "body": "Find a low-cost route in an example floor graph. Step-free paths avoid stairs.",
+        "scope": "Assumed route cost"
+      },
+      {
+        "name": "Bayesian inference",
+        "short": "BAYES",
+        "body": "One noisy report updates P(free). With no report, keep the prior.",
+        "scope": "Prior in simple search"
+      },
+      {
+        "name": "Hidden Markov model",
+        "short": "HMM",
+        "body": "Filter a sequence of noisy reports, then predict the next occupancy slot.",
+        "scope": "Workspace sequences"
+      },
+      {
+        "name": "Sequential decisions",
+        "short": "BELIEF-STATE POMDP",
+        "body": "Book, inspect, wait or leave using finite-horizon backward recursion.",
+        "scope": "Separate result advice"
+      }
+    ],
+    "note": "No report: retain the prior. No sequence: HMM is inactive. The decision advisor does not rank rooms. This is not value iteration."
+  },
+  {
+    "id": "search",
+    "kicker": "03 / CONSTRAINTS + SEARCH",
+    "title": "Do not spend the only specialist space on a flexible request.",
+    "subtitle": "A constructed three-request example",
+    "objective": "U = \u03a3 [100p + 30b \u2212 1.2d \u2212 1.5t \u2212 0.1s]",
+    "objective_key": "p: priority   b: P(free)   d: delay slots   t: assumed travel minutes   s: spare seats",
+    "fixture": {
+      "requests": 3,
+      "baseline_served": 2,
+      "chosen_served": 3,
+      "baseline_score": 430.65,
+      "chosen_score": 744.4
+    },
+    "bullets": [
+      "First fit takes the first feasible resource ID and time in request order.",
+      "Hill climbing improves the combined objective while keeping hard constraints.",
+      "Retain the baseline if no improving plan is found."
+    ],
+    "note": "Constructed specialist fixture verified in results/browser_e2e_verified_run.json. Scores are assumed utility units, not real-world performance or an optimality guarantee."
+  },
+  {
+    "id": "uncertainty",
+    "kicker": "04 / UNCERTAINTY + DECISIONS",
+    "title": "An observation can change the best next action.",
+    "subtitle": "A small, specified probability model",
+    "bayes": {
+      "prior": 0.6,
+      "sensitivity": 0.85,
+      "false_positive": 0.15,
+      "report": "free",
+      "posterior": 0.8947368421052632
+    },
+    "decision": {
+      "belief": 0.6,
+      "horizon": 2,
+      "success": 10,
+      "failure": -8,
+      "inspect_cost": 0.7,
+      "wait_cost": 0.8,
+      "stay_free": 0.8,
+      "become_free": 0.35,
+      "values": {
+        "book": 2.8,
+        "inspect": 3.92,
+        "wait": 2.36,
+        "leave": 0
+      }
+    },
+    "bullets": [
+      "An assumed free report changes 0.60 into 0.894737.",
+      "At belief 0.60 and horizon two, inspection has the highest expected assumed utility.",
+      "HMM sequences and waiting use specified 0.80 / 0.35 occupancy transitions."
+    ],
+    "note": "Checked against engine.posterior and engine.decision. No model was trained. Synthetic beliefs and utilities, not measured occupancy or accuracy."
+  },
+  {
+    "id": "evidence",
+    "kicker": "05 / REPRODUCIBLE EVIDENCE",
+    "title": "Evidence, with the boundaries attached.",
+    "subtitle": "Small cases, independent checks, explicit limits",
+    "bullets": [
+      "24 / 24 hill and exact results matched a separate tiny-case oracle.",
+      "15 / 24 hill results improved on first fit; no constraint violations in those cases.",
+      "94 Python passed, one skipped; 53 JavaScript and ten hosted HTTP checks passed.",
+      "100 historical workspace browser checks passed. New finder: 100 planned, not run."
+    ],
+    "sources": [
+      "results/evaluation_summary.json",
+      "results/validation_summary.json",
+      "results/finder_qa.json",
+      "results/finder_http_checks.json",
+      "results/browser_e2e_verified_run.json"
+    ],
+    "note": "The 21 Nov 2026 browser run covers the original workspace only: reduced-motion Chromium at five emulated viewports. It does not verify the new finder or physical devices."
+  },
+  {
+    "id": "demo",
+    "kicker": "06 / TRY IT, THEN ASK WHY",
+    "title": "A place for your plans. A reason for every choice.",
+    "subtitle": "Live demonstration and next steps",
+    "bullets": [
+      "Search for one iMac; read the room, floor, time and AIF explanation.",
+      "Review, confirm and cancel a simulation reservation.",
+      "Open the AI workspace and compare the specialist scenario."
+    ],
+    "next_steps": [
+      "Verify actual inventory and booking rules.",
+      "Calibrate probabilities with consented occupancy data.",
+      "Add authentication and a shared database."
+    ],
+    "url": "https://expo-smart-scheduler.vercel.app/find.html",
+    "note": "Local mode: one-computer SQLite. Public mode: one browser profile. No real campus bookings or real-world performance claim."
+  }
+]
