@@ -1,0 +1,134 @@
+{
+  "assignments": [
+    {
+      "request_id": "flexible",
+      "resource_id": "R-B",
+      "start": 540,
+      "end": 600,
+      "score": 119.65,
+      "belief": 0.8,
+      "route": {
+        "path": [
+          "F1 lobby",
+          "F1 stairs",
+          "F2 stairs",
+          "F2 lobby",
+          "Resource door (assumed 1 minute)"
+        ],
+        "cost": 2.9000000000000004,
+        "expanded": 6
+      },
+      "explanation": "Capacity 4 fits 4; required equipment available. Bayesian posterior from hypothetical unknown report: 0.800. Assumed travel 2.9 min; delay 0 min. Synthetic utility 119.65. Known local reservations are hard constraints; probability never overrides a booking.",
+      "decision_advice": {
+        "action": "inspect",
+        "values": {
+          "book": 6.4,
+          "inspect": 6.472999999996581,
+          "wait": 4.187000000001961,
+          "leave": 0.0
+        },
+        "horizon": 3,
+        "belief": 0.8,
+        "explanation": "Choose inspect: highest expected synthetic utility among allowed actions. Book uses 0.800*10+(1-0.800)*-8. Inspection purchases a noisy observation without changing occupancy. Waiting changes the belief using the occupancy transition. Both consume one action opportunity; booking and leaving terminate. At horizon 1 only book/leave are allowed.",
+        "model": "Finite-horizon belief-state POMDP solved by backward Bellman recursion; not value iteration",
+        "states_evaluated": 13,
+        "assumptions": {
+          "sensitivity": 0.85,
+          "false_positive": 0.15,
+          "stay_free": 0.8,
+          "become_free": 0.35,
+          "success": 10.0,
+          "failure": -8.0,
+          "inspect_cost": 0.7,
+          "wait_cost": 0.8
+        }
+      }
+    },
+    {
+      "request_id": "projector",
+      "resource_id": "R-A",
+      "start": 540,
+      "end": 600,
+      "score": 319.1,
+      "belief": 0.7,
+      "route": {
+        "path": [
+          "F1 lobby",
+          "Resource door (assumed 1 minute)"
+        ],
+        "cost": 1.0,
+        "expanded": 1
+      },
+      "explanation": "Capacity 8 fits 4; required equipment available. Bayesian posterior from hypothetical unknown report: 0.700. Assumed travel 1.0 min; delay 0 min. Synthetic utility 319.10. Known local reservations are hard constraints; probability never overrides a booking.",
+      "decision_advice": {
+        "action": "inspect",
+        "values": {
+          "book": 4.6,
+          "inspect": 5.224500000000386,
+          "wait": 3.750500000003483,
+          "leave": 0.0
+        },
+        "horizon": 3,
+        "belief": 0.7,
+        "explanation": "Choose inspect: highest expected synthetic utility among allowed actions. Book uses 0.700*10+(1-0.700)*-8. Inspection purchases a noisy observation without changing occupancy. Waiting changes the belief using the occupancy transition. Both consume one action opportunity; booking and leaving terminate. At horizon 1 only book/leave are allowed.",
+        "model": "Finite-horizon belief-state POMDP solved by backward Bellman recursion; not value iteration",
+        "states_evaluated": 12,
+        "assumptions": {
+          "sensitivity": 0.85,
+          "false_positive": 0.15,
+          "stay_free": 0.8,
+          "become_free": 0.35,
+          "success": 10.0,
+          "failure": -8.0,
+          "inspect_cost": 0.7,
+          "wait_cost": 0.8
+        }
+      }
+    }
+  ],
+  "unassigned": [],
+  "score": 438.75,
+  "baseline_score": 119.1,
+  "baseline_assignments": [
+    {
+      "request_id": "flexible",
+      "resource_id": "R-A",
+      "start": 540,
+      "end": 600,
+      "score": 119.1,
+      "belief": 0.7,
+      "route": {
+        "path": [
+          "F1 lobby",
+          "Resource door (assumed 1 minute)"
+        ],
+        "cost": 1.0,
+        "expanded": 1
+      },
+      "explanation": "Capacity 8 fits 4; required equipment available. Bayesian posterior from hypothetical unknown report: 0.700. Assumed travel 1.0 min; delay 0 min. Synthetic utility 119.10. Known local reservations are hard constraints; probability never overrides a booking."
+    }
+  ],
+  "trace": [
+    119.1,
+    438.75
+  ],
+  "method": "hill",
+  "seed": 42,
+  "diagnostics": {
+    "candidate_counts": {
+      "flexible": 2,
+      "projector": 1
+    },
+    "optimal": false,
+    "search_nodes": 0,
+    "node_limit": 200000,
+    "restarts": 5,
+    "evaluated_moves": 77,
+    "trace_kind": "best objective so far",
+    "data": "synthetic inventory and utility assumptions",
+    "objective": "sum(100*priority + 30*P(free) - 1.2*delay_slots - 1.5*travel_minutes - 0.1*spare_seats)",
+    "baseline": "First feasible resource ID, then start time, in input request order",
+    "csp": "Time, kind, capacity, equipment, accessibility, reservations and parent-child conflicts",
+    "local_search_note": "5 seeded starts; strict improving single moves and top-8 pair replacements; no global optimality guarantee"
+  }
+}

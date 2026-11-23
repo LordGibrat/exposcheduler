@@ -1,0 +1,27 @@
+{
+  "data": "All inventory, probabilities and utilities are synthetic; no real-world performance estimate.",
+  "inventory_resources": 23,
+  "floors": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "room_report_checks": 207,
+  "scheduling_trials": 24,
+  "hill_no_worse_than_baseline": 24,
+  "hill_strictly_improved": 15,
+  "hill_matches_oracle": 24,
+  "mean_objective_gain": 71.06666666666668,
+  "max_oracle_gap": 0.0,
+  "constraint_violations": 0,
+  "exact_matches_independent_oracle": 24,
+  "recommendation_sensitivity_cases": 36,
+  "decision_sensitivity_cases": 225,
+  "hmm_sequences": 360,
+  "timing_note": "CSV times are one local run per small instance, not a scalability benchmark."
+}
