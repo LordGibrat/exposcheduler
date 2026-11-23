@@ -1,0 +1,39 @@
+{
+  "source": "https://alem.ai/en/",
+  "directory_status": "Floor themes from the public alem.ai directory, checked 2026-11-19. This is not a room plan or booking authorization.",
+  "resource_status": "Every room ID, capacity, route, access flag, probability and bookable example in this prototype is synthetic. Floors 5-8 are representative fictional resources, not a claim that actual tenants accept reservations.",
+  "floors": [
+    {
+      "floor": 1,
+      "theme": "Museum"
+    },
+    {
+      "floor": 2,
+      "theme": "TUMO"
+    },
+    {
+      "floor": 3,
+      "theme": "TUMO"
+    },
+    {
+      "floor": 4,
+      "theme": "Tomorrow School / QAIRU"
+    },
+    {
+      "floor": 5,
+      "theme": "Network School"
+    },
+    {
+      "floor": 6,
+      "theme": "Startup Campus"
+    },
+    {
+      "floor": 7,
+      "theme": "AI Labs"
+    },
+    {
+      "floor": 8,
+      "theme": "AI-Driven Government"
+    }
+  ]
+}

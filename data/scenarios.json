@@ -1,0 +1,155 @@
+[
+  {
+    "id": "expo_busy_day",
+    "name": "Expo busy day",
+    "description": "Synthetic competing requests across eight example floors. Whole-lab and individual iMac bookings cannot overlap.",
+    "requests": [
+      {
+        "id": "study",
+        "title": "Calculus study group",
+        "kind": "study_room",
+        "group_size": 4,
+        "features": [
+          "quiet"
+        ],
+        "preferred_floor": 2,
+        "earliest": 600,
+        "latest": 780,
+        "duration": 60,
+        "priority": 2,
+        "accessible": false
+      },
+      {
+        "id": "imac",
+        "title": "Python notebook on an iMac",
+        "kind": "imac",
+        "group_size": 1,
+        "features": [
+          "macOS"
+        ],
+        "preferred_floor": 2,
+        "earliest": 600,
+        "latest": 780,
+        "duration": 60,
+        "priority": 2,
+        "accessible": true
+      },
+      {
+        "id": "lab",
+        "title": "AI practical class",
+        "kind": "computer_lab",
+        "group_size": 6,
+        "features": [
+          "macOS",
+          "projector"
+        ],
+        "preferred_floor": 3,
+        "earliest": 600,
+        "latest": 780,
+        "duration": 60,
+        "priority": 3,
+        "accessible": false
+      },
+      {
+        "id": "talk",
+        "title": "Student AI project showcase",
+        "kind": "auditorium",
+        "group_size": 50,
+        "features": [
+          "projector"
+        ],
+        "preferred_floor": 1,
+        "earliest": 660,
+        "latest": 840,
+        "duration": 60,
+        "priority": 3,
+        "accessible": true
+      }
+    ],
+    "reports": {
+      "F2-Q01": "free",
+      "F4-IM01": [
+        "free",
+        "free",
+        "busy"
+      ],
+      "F4-AUD": "busy"
+    }
+  },
+  {
+    "id": "specialist_room",
+    "name": "Flexible request versus specialist request",
+    "description": "A flexible 20-person meeting competes with two classroom requests. In the supplied synthetic inventory, first-fit uses the two larger classrooms too early. Search can move the flexible request and serve all three. Recalculate after inventory changes.",
+    "requests": [
+      {
+        "id": "flexible",
+        "title": "Flexible team meeting",
+        "kind": "any",
+        "group_size": 20,
+        "features": [
+          "projector"
+        ],
+        "preferred_floor": 1,
+        "earliest": 600,
+        "latest": 660,
+        "duration": 60,
+        "priority": 1,
+        "accessible": false
+      },
+      {
+        "id": "specialist",
+        "title": "Class requiring 24 seats",
+        "kind": "classroom",
+        "group_size": 24,
+        "features": [
+          "projector"
+        ],
+        "preferred_floor": 1,
+        "earliest": 600,
+        "latest": 660,
+        "duration": 60,
+        "priority": 3,
+        "accessible": false
+      },
+      {
+        "id": "large_class",
+        "title": "Class requiring 30 seats",
+        "kind": "classroom",
+        "group_size": 30,
+        "features": [
+          "projector"
+        ],
+        "preferred_floor": 2,
+        "earliest": 600,
+        "latest": 660,
+        "duration": 60,
+        "priority": 3,
+        "accessible": false
+      }
+    ],
+    "reports": {}
+  },
+  {
+    "id": "over_capacity",
+    "name": "Explain an impossible request",
+    "description": "The example auditorium has 80 seats. A 100-person request must remain unassigned, with an honest reason.",
+    "requests": [
+      {
+        "id": "too_large",
+        "title": "100-person event",
+        "kind": "auditorium",
+        "group_size": 100,
+        "features": [
+          "projector"
+        ],
+        "preferred_floor": 4,
+        "earliest": 600,
+        "latest": 720,
+        "duration": 60,
+        "priority": 3,
+        "accessible": false
+      }
+    ],
+    "reports": {}
+  }
+]

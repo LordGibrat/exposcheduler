@@ -1,0 +1,306 @@
+[
+  {
+    "id": "F1-L01",
+    "name": "Welcome lounge",
+    "floor": 1,
+    "kind": "lounge",
+    "capacity": 12,
+    "features": [
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.55
+  },
+  {
+    "id": "F1-S01",
+    "name": "Seminar room",
+    "floor": 1,
+    "kind": "classroom",
+    "capacity": 24,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F2-C01",
+    "name": "Flexible classroom",
+    "floor": 2,
+    "kind": "classroom",
+    "capacity": 30,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  },
+  {
+    "id": "F2-G01",
+    "name": "Team study room",
+    "floor": 2,
+    "kind": "study_room",
+    "capacity": 6,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.7
+  },
+  {
+    "id": "F2-Q01",
+    "name": "Quiet study room",
+    "floor": 2,
+    "kind": "study_room",
+    "capacity": 4,
+    "features": [
+      "quiet",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.75
+  },
+  {
+    "id": "F4-LAB",
+    "name": "iMac lab (whole room)",
+    "floor": 4,
+    "kind": "computer_lab",
+    "capacity": 6,
+    "features": [
+      "macOS",
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  },
+  {
+    "id": "F4-IM01",
+    "name": "iMac 01",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS",
+      "wheelchair"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.7
+  },
+  {
+    "id": "F4-IM02",
+    "name": "iMac 02",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS",
+      "wheelchair"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.65
+  },
+  {
+    "id": "F4-IM03",
+    "name": "iMac 03",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.8
+  },
+  {
+    "id": "F4-IM04",
+    "name": "iMac 04",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.55
+  },
+  {
+    "id": "F4-IM05",
+    "name": "iMac 05",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.75
+  },
+  {
+    "id": "F4-IM06",
+    "name": "iMac 06",
+    "floor": 4,
+    "kind": "imac",
+    "capacity": 1,
+    "features": [
+      "macOS"
+    ],
+    "parent_id": "F4-LAB",
+    "prior": 0.6
+  },
+  {
+    "id": "F3-P01",
+    "name": "Project meeting room",
+    "floor": 3,
+    "kind": "meeting_room",
+    "capacity": 8,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F4-AUD",
+    "name": "Fourth-floor auditorium",
+    "floor": 4,
+    "kind": "auditorium",
+    "capacity": 80,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.7
+  },
+  {
+    "id": "F4-M01",
+    "name": "Presentation practice room",
+    "floor": 4,
+    "kind": "meeting_room",
+    "capacity": 10,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.75
+  },
+  {
+    "id": "F5-M01",
+    "name": "Example Network School meeting space",
+    "floor": 5,
+    "kind": "meeting_room",
+    "capacity": 8,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F5-S01",
+    "name": "Example Network School seminar space",
+    "floor": 5,
+    "kind": "classroom",
+    "capacity": 20,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  },
+  {
+    "id": "F6-M01",
+    "name": "Example Startup Campus meeting space",
+    "floor": 6,
+    "kind": "meeting_room",
+    "capacity": 8,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F6-S01",
+    "name": "Example Startup Campus seminar space",
+    "floor": 6,
+    "kind": "classroom",
+    "capacity": 20,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  },
+  {
+    "id": "F7-M01",
+    "name": "Example AI labs meeting space",
+    "floor": 7,
+    "kind": "meeting_room",
+    "capacity": 8,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F7-S01",
+    "name": "Example AI labs seminar space",
+    "floor": 7,
+    "kind": "classroom",
+    "capacity": 20,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  },
+  {
+    "id": "F8-M01",
+    "name": "Example AI-Driven Government meeting space",
+    "floor": 8,
+    "kind": "meeting_room",
+    "capacity": 8,
+    "features": [
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.65
+  },
+  {
+    "id": "F8-S01",
+    "name": "Example AI-Driven Government seminar space",
+    "floor": 8,
+    "kind": "classroom",
+    "capacity": 20,
+    "features": [
+      "projector",
+      "whiteboard",
+      "wheelchair"
+    ],
+    "parent_id": null,
+    "prior": 0.6
+  }
+]
