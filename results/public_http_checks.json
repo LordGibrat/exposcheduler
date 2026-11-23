@@ -1,0 +1,29 @@
+{
+  "checked_on": "2026-11-21",
+  "deployment_id": "dpl_GsW4C2AFLSsXTvv5ivw5UxS5TMs9",
+  "url": "https://expo-smart-scheduler.vercel.app/",
+  "deployment_state": "READY",
+  "checks": [
+    {
+      "url": "https://expo-smart-scheduler.vercel.app/",
+      "status": 200,
+      "characters": 18325,
+      "matches_uploaded_source": true
+    },
+    {
+      "url": "https://expo-smart-scheduler.vercel.app/api/state?date=2026-12-01",
+      "status": 200,
+      "characters": 8384
+    },
+    {
+      "url": "https://expo-smart-scheduler.vercel.app/style.css",
+      "status": 200,
+      "characters": 57420,
+      "matches_uploaded_source": true
+    }
+  ],
+  "resources": 23,
+  "represented_floors": 8,
+  "storage_mode": "browser",
+  "limitations": "HTTP fetch checks only. No rendered desktop/mobile interaction, screenshot or browser-storage persistence verification."
+}

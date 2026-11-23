@@ -1,0 +1,1854 @@
+{
+  "kind": "actual-playwright-browser-run",
+  "runner_revision": "2026-11-21-responsive-2",
+  "started_at": "2026-11-21T16:27:54.235Z",
+  "base_url": "https://expo-smart-scheduler.vercel.app/",
+  "planning_date": "2026-12-01",
+  "status": "failed",
+  "viewports": [
+    {
+      "id": "360x800",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "phase": "completed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 23
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 34
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 360,
+            "document_width": 360,
+            "body_width": 360
+          },
+          "duration_ms": 5
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "failed",
+          "critical": false,
+          "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+          "failure_phase": "floor-ui:select-floor-four",
+          "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)",
+          "ui_state": {
+            "planning_date": "2026-12-01",
+            "workspace_busy": "false",
+            "selected_floor": [
+              "all"
+            ],
+            "separated_floors": "false"
+          },
+          "duration_ms": 60066
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "client_width": 318,
+            "scroll_width": 1034,
+            "inner_width": 1000,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 141
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 549
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 63
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 360,
+            "document_width": 360,
+            "body_width": 360
+          },
+          "duration_ms": 2
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 400
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 367
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 1081
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "download": "360x800-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 140
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 979
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 359
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 344
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 76
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 389
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 105
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 360,
+            "document_width": 360,
+            "body_width": 360
+          },
+          "duration_ms": 608
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 1
+        }
+      ],
+      "screenshots": [
+        "360x800-initial.png",
+        "360x800-floor-four-and-six-imacs-failure.png",
+        "360x800-specialist-plan.png",
+        "360x800-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ],
+      "failures": [
+        {
+          "check": "floor-four-and-six-imacs",
+          "phase": "floor-ui:select-floor-four",
+          "error": "page.waitForFunction: Timeout 60000ms exceeded."
+        }
+      ],
+      "style_snapshot": {
+        "workspace_busy": "false",
+        "stack": {
+          "width": "300px",
+          "height": "320px",
+          "left": "25px",
+          "top": "-10px",
+          "transform": "matrix3d(0.954097, -0.180289, 0.239156, 0, 0.117148, 0.959551, 0.256005, 0, -0.275637, -0.216237, 0.936625, 0, 0, 0, 0, 1)",
+          "scale": "none",
+          "bounds": {
+            "left": 39.70866394042969,
+            "right": 350.10240173339844,
+            "width": 310.39373779296875
+          }
+        },
+        "scene": {
+          "width": "350px",
+          "height": "310px",
+          "left": "-15px",
+          "top": "0px",
+          "transform": "none",
+          "scale": "0.95",
+          "bounds": {
+            "left": 13.75,
+            "right": 346.25,
+            "width": 332.5
+          }
+        },
+        "orbit": {
+          "width": "280px",
+          "height": "220px",
+          "left": "35px",
+          "top": "20px",
+          "transform": "matrix(0.857167, 0.515038, -0.515038, 0.857167, 0, 0)",
+          "scale": "none",
+          "bounds": {
+            "left": 12.175270080566406,
+            "right": 347.82474517822266,
+            "width": 335.64947509765625
+          }
+        }
+      },
+      "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+      "failure_phase": "floor-ui:select-floor-four",
+      "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)"
+    },
+    {
+      "id": "390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "phase": "completed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 20
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 33
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 390,
+            "document_width": 390,
+            "body_width": 390
+          },
+          "duration_ms": 2
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "failed",
+          "critical": false,
+          "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+          "failure_phase": "floor-ui:select-floor-four",
+          "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)",
+          "ui_state": {
+            "planning_date": "2026-12-01",
+            "workspace_busy": "false",
+            "selected_floor": [
+              "all"
+            ],
+            "separated_floors": "false"
+          },
+          "duration_ms": 60102
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "client_width": 348,
+            "scroll_width": 1034,
+            "inner_width": 1000,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 177
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 423
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 29
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 390,
+            "document_width": 390,
+            "body_width": 390
+          },
+          "duration_ms": 3
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 344
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 362
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 880
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "download": "390x844-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 68
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 1127
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 302
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 310
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 70
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 475
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 91
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 390,
+            "document_width": 390,
+            "body_width": 390
+          },
+          "duration_ms": 417
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 0
+        }
+      ],
+      "screenshots": [
+        "390x844-initial.png",
+        "390x844-floor-four-and-six-imacs-failure.png",
+        "390x844-specialist-plan.png",
+        "390x844-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ],
+      "failures": [
+        {
+          "check": "floor-four-and-six-imacs",
+          "phase": "floor-ui:select-floor-four",
+          "error": "page.waitForFunction: Timeout 60000ms exceeded."
+        }
+      ],
+      "style_snapshot": {
+        "workspace_busy": "false",
+        "stack": {
+          "width": "300px",
+          "height": "320px",
+          "left": "25px",
+          "top": "-10px",
+          "transform": "matrix3d(0.954097, -0.180289, 0.239156, 0, 0.117148, 0.959551, 0.256005, 0, -0.275637, -0.216237, 0.936625, 0, 0, 0, 0, 1)",
+          "scale": "none",
+          "bounds": {
+            "left": 54.70866394042969,
+            "right": 365.10240173339844,
+            "width": 310.39373779296875
+          }
+        },
+        "scene": {
+          "width": "350px",
+          "height": "310px",
+          "left": "0px",
+          "top": "0px",
+          "transform": "none",
+          "scale": "0.95",
+          "bounds": {
+            "left": 28.75,
+            "right": 361.25,
+            "width": 332.5
+          }
+        },
+        "orbit": {
+          "width": "280px",
+          "height": "220px",
+          "left": "35px",
+          "top": "20px",
+          "transform": "matrix(0.857167, 0.515038, -0.515038, 0.857167, 0, 0)",
+          "scale": "none",
+          "bounds": {
+            "left": 27.175270080566406,
+            "right": 362.82474517822266,
+            "width": 335.64947509765625
+          }
+        }
+      },
+      "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+      "failure_phase": "floor-ui:select-floor-four",
+      "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)"
+    },
+    {
+      "id": "768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "phase": "completed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 18
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 33
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 768,
+            "document_width": 768,
+            "body_width": 768
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "failed",
+          "critical": false,
+          "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+          "failure_phase": "floor-ui:select-floor-four",
+          "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)",
+          "ui_state": {
+            "planning_date": "2026-12-01",
+            "workspace_busy": "false",
+            "selected_floor": [
+              "all"
+            ],
+            "separated_floors": "false"
+          },
+          "duration_ms": 60104
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "client_width": 718,
+            "scroll_width": 1040,
+            "inner_width": 1000,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 167
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 439
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 37
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 768,
+            "document_width": 768,
+            "body_width": 768
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 352
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 321
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 936
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "download": "768x1024-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 81
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 1035
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 304
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 359
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 86
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 391
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 137
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 768,
+            "document_width": 768,
+            "body_width": 768
+          },
+          "duration_ms": 430
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 0
+        }
+      ],
+      "screenshots": [
+        "768x1024-initial.png",
+        "768x1024-floor-four-and-six-imacs-failure.png",
+        "768x1024-specialist-plan.png",
+        "768x1024-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ],
+      "failures": [
+        {
+          "check": "floor-four-and-six-imacs",
+          "phase": "floor-ui:select-floor-four",
+          "error": "page.waitForFunction: Timeout 60000ms exceeded."
+        }
+      ],
+      "style_snapshot": {
+        "workspace_busy": "false",
+        "stack": {
+          "width": "300px",
+          "height": "310px",
+          "left": "25px",
+          "top": "0px",
+          "transform": "matrix3d(0.954097, -0.180289, 0.239156, 0, 0.117148, 0.959551, 0.256005, 0, -0.275637, -0.216237, 0.936625, 0, 0, 0, 0, 1)",
+          "scale": "none",
+          "bounds": {
+            "left": 439.0119934082031,
+            "right": 748.1873779296875,
+            "width": 309.1753845214844
+          }
+        },
+        "scene": {
+          "width": "350px",
+          "height": "310px",
+          "left": "-10px",
+          "top": "0px",
+          "transform": "none",
+          "scale": "0.95",
+          "bounds": {
+            "left": 412.75,
+            "right": 745.25,
+            "width": 332.5
+          }
+        },
+        "orbit": {
+          "width": "280px",
+          "height": "220px",
+          "left": "35px",
+          "top": "20px",
+          "transform": "matrix(0.857167, 0.515038, -0.515038, 0.857167, 0, 0)",
+          "scale": "none",
+          "bounds": {
+            "left": 411.1752624511719,
+            "right": 746.82470703125,
+            "width": 335.6494445800781
+          }
+        }
+      },
+      "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+      "failure_phase": "floor-ui:select-floor-four",
+      "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)"
+    },
+    {
+      "id": "1440x1000",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": false,
+        "mobile": false
+      },
+      "status": "failed",
+      "phase": "completed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 17
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 27
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 1440,
+            "document_width": 1440,
+            "body_width": 1440
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "failed",
+          "critical": false,
+          "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+          "failure_phase": "floor-ui:select-floor-four",
+          "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)",
+          "ui_state": {
+            "planning_date": "2026-12-01",
+            "workspace_busy": "false",
+            "selected_floor": [
+              "all"
+            ],
+            "separated_floors": "false"
+          },
+          "duration_ms": 60132
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "client_width": 1104,
+            "scroll_width": 1104,
+            "inner_width": 1064,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 187
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 461
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 27
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 1440,
+            "document_width": 1440,
+            "body_width": 1440
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 546
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 353
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 927
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "download": "1440x1000-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 85
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 1045
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 328
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 342
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 68
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 2977
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 96
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 1440,
+            "document_width": 1440,
+            "body_width": 1440
+          },
+          "duration_ms": 509
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 0
+        }
+      ],
+      "screenshots": [
+        "1440x1000-initial.png",
+        "1440x1000-floor-four-and-six-imacs-failure.png",
+        "1440x1000-specialist-plan.png",
+        "1440x1000-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ],
+      "failures": [
+        {
+          "check": "floor-four-and-six-imacs",
+          "phase": "floor-ui:select-floor-four",
+          "error": "page.waitForFunction: Timeout 60000ms exceeded."
+        }
+      ],
+      "style_snapshot": {
+        "workspace_busy": "false",
+        "stack": {
+          "width": "370px",
+          "height": "302px",
+          "left": "0px",
+          "top": "8px",
+          "transform": "matrix3d(0.954097, -0.180289, 0.239156, 0, 0.117148, 0.959551, 0.256005, 0, -0.275637, -0.216237, 0.936625, 0, 0, 0, 0, 1)",
+          "scale": "none",
+          "bounds": {
+            "left": 1043.0369873046875,
+            "right": 1435.6475830078125,
+            "width": 392.610595703125
+          }
+        },
+        "scene": {
+          "width": "370px",
+          "height": "310px",
+          "left": "0px",
+          "top": "0px",
+          "transform": "none",
+          "scale": "none",
+          "bounds": {
+            "left": 1034,
+            "right": 1404,
+            "width": 370
+          }
+        },
+        "orbit": {
+          "width": "330px",
+          "height": "255px",
+          "left": "4px",
+          "top": "12px",
+          "transform": "matrix(0.857167, 0.515038, -0.515038, 0.857167, 0, 0)",
+          "scale": "none",
+          "bounds": {
+            "left": 995.9000244140625,
+            "right": 1410.0999755859375,
+            "width": 414.199951171875
+          }
+        }
+      },
+      "error": "page.waitForFunction: Timeout 60000ms exceeded.",
+      "failure_phase": "floor-ui:select-floor-four",
+      "failure_stack": "page.waitForFunction: Timeout 60000ms exceeded.\n    at waitAttribute (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:118:14)\n    at check.critical (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:323:13)\n    at async check (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:238:27)\n    at async runViewport (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:320:5)\n    at async main (C:\\Users\\user\\Documents\\Codex\\2026-11-19\\new-chat\\work\\expo_smart_scheduler\\tests\\browser_e2e.cjs:564:7)"
+    },
+    {
+      "id": "1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": false,
+        "mobile": false
+      },
+      "status": "passed",
+      "phase": "completed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 20
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 27
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "selected_floor": 4,
+            "imacs": 6,
+            "exploded": true
+          },
+          "duration_ms": 95
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "client_width": 1388,
+            "scroll_width": 1388,
+            "inner_width": 1348,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 145
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 397
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 34
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 5
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 350
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 326
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 1099
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "download": "1920x1080-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 66
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 960
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 354
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 340
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 66
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 427
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 93
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "critical": false,
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 509
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "critical": true,
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 0
+        }
+      ],
+      "screenshots": [
+        "1920x1080-initial.png",
+        "1920x1080-specialist-plan.png",
+        "1920x1080-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ],
+      "failures": [],
+      "style_snapshot": {
+        "workspace_busy": "false",
+        "stack": {
+          "width": "400px",
+          "height": "302px",
+          "left": "0px",
+          "top": "8px",
+          "transform": "matrix3d(0.954097, -0.180289, 0.239156, 0, 0.117148, 0.959551, 0.256005, 0, -0.275637, -0.216237, 0.936625, 0, 0, 0, 0, 1)",
+          "scale": "none",
+          "bounds": {
+            "left": 1321.7806396484375,
+            "right": 1777.485595703125,
+            "width": 455.7049560546875
+          }
+        },
+        "scene": {
+          "width": "400px",
+          "height": "310px",
+          "left": "0px",
+          "top": "0px",
+          "transform": "none",
+          "scale": "1.08",
+          "bounds": {
+            "left": 1309,
+            "right": 1741,
+            "width": 432
+          }
+        },
+        "orbit": {
+          "width": "330px",
+          "height": "255px",
+          "left": "4px",
+          "top": "12px",
+          "transform": "matrix(0.857167, 0.515038, -0.515038, 0.857167, 0, 0)",
+          "scale": "none",
+          "bounds": {
+            "left": 1267.85205078125,
+            "right": 1715.18798828125,
+            "width": 447.3359375
+          }
+        }
+      }
+    }
+  ],
+  "note": "Results and screenshots come only from this invocation. No API responses are mocked. Browser-owned simulation bookings use fresh profiles.",
+  "execution_phase": "completed",
+  "updated_at": "2026-11-21T16:32:34.252Z",
+  "totals": {
+    "viewports_planned": 5,
+    "viewports_run": 5,
+    "viewports_in_progress": 0,
+    "checks_passed": 96,
+    "checks_failed": 4,
+    "checks_running": 0,
+    "checks_not_run": 0
+  },
+  "browser_version": "151.0.7922.34",
+  "current_viewport": null,
+  "finished_at": "2026-11-21T16:32:34.252Z"
+}

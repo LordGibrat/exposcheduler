@@ -1,0 +1,830 @@
+{
+  "kind": "actual-playwright-browser-run",
+  "started_at": "2026-11-21T16:07:32.062Z",
+  "base_url": "https://expo-smart-scheduler.vercel.app/",
+  "planning_date": "2026-12-01",
+  "status": "failed",
+  "viewports": [
+    {
+      "id": "360x800",
+      "viewport": {
+        "width": 360,
+        "height": 800
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 26
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 28
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "failed",
+          "error": "Document overflows horizontally: {\"viewport_width\":360,\"document_width\":377,\"body_width\":377}",
+          "duration_ms": 2
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "not_run"
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "not_run"
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "not_run"
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "not_run"
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "not_run"
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "not_run"
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "not_run"
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "not_run"
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "not_run"
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "not_run"
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "not_run"
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "not_run"
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "not_run"
+        }
+      ],
+      "screenshots": [
+        "360x800-failure.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        }
+      ],
+      "error": "Document overflows horizontally: {\"viewport_width\":360,\"document_width\":377,\"body_width\":377}"
+    },
+    {
+      "id": "390x844",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 17
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 24
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "failed",
+          "error": "Document overflows horizontally: {\"viewport_width\":390,\"document_width\":392,\"body_width\":392}",
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "not_run"
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "not_run"
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "not_run"
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "not_run"
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "not_run"
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "not_run"
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "not_run"
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "not_run"
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "not_run"
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "not_run"
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "not_run"
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "not_run"
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "not_run"
+        }
+      ],
+      "screenshots": [
+        "390x844-failure.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        }
+      ],
+      "error": "Document overflows horizontally: {\"viewport_width\":390,\"document_width\":392,\"body_width\":392}"
+    },
+    {
+      "id": "768x1024",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": true,
+        "mobile": true
+      },
+      "status": "failed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 17
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 25
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "failed",
+          "error": "Document overflows horizontally: {\"viewport_width\":768,\"document_width\":775,\"body_width\":775}",
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "not_run"
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "not_run"
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "not_run"
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "not_run"
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "not_run"
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "not_run"
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "not_run"
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "not_run"
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "not_run"
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "not_run"
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "not_run"
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "not_run"
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "not_run"
+        }
+      ],
+      "screenshots": [
+        "768x1024-failure.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        }
+      ],
+      "error": "Document overflows horizontally: {\"viewport_width\":768,\"document_width\":775,\"body_width\":775}"
+    },
+    {
+      "id": "1440x1000",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": false,
+        "mobile": false
+      },
+      "status": "failed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 18
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 25
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "observed": {
+            "viewport_width": 1440,
+            "document_width": 1440,
+            "body_width": 1440
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "failed",
+          "error": "Expected values to be strictly equal:\n\n'false' !== 'true'\n",
+          "duration_ms": 36
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "not_run"
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "not_run"
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "not_run"
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "not_run"
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "not_run"
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "not_run"
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "not_run"
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "not_run"
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "not_run"
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "not_run"
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "not_run"
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "not_run"
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "not_run"
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "not_run"
+        }
+      ],
+      "screenshots": [
+        "1440x1000-initial.png",
+        "1440x1000-failure.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        }
+      ],
+      "error": "Expected values to be strictly equal:\n\n'false' !== 'true'\n"
+    },
+    {
+      "id": "1920x1080",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "emulation": {
+        "reduced_motion": "reduce",
+        "touch": false,
+        "mobile": false
+      },
+      "status": "passed",
+      "checks": [
+        {
+          "name": "inventory-and-browser-storage",
+          "status": "passed",
+          "observed": {
+            "resources": 23,
+            "floors": 8,
+            "storage_mode": "browser",
+            "initial_reservations": 0
+          },
+          "duration_ms": 16
+        },
+        {
+          "name": "keyboard-skip-link",
+          "status": "passed",
+          "observed": {
+            "first_focus": "skip-link",
+            "next_main_control": "planning-date"
+          },
+          "duration_ms": 25
+        },
+        {
+          "name": "initial-horizontal-fit",
+          "status": "passed",
+          "observed": {
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 1
+        },
+        {
+          "name": "floor-four-and-six-imacs",
+          "status": "passed",
+          "observed": {
+            "selected_floor": 4,
+            "imacs": 6,
+            "exploded": true
+          },
+          "duration_ms": 83
+        },
+        {
+          "name": "timeline-contained-overflow",
+          "status": "passed",
+          "observed": {
+            "client_width": 1388,
+            "scroll_width": 1388,
+            "inner_width": 1348,
+            "inner_min_width": "1000px",
+            "overflow_x": "auto",
+            "rows": 23
+          },
+          "duration_ms": 131
+        },
+        {
+          "name": "specialist-plan-versus-baseline",
+          "status": "passed",
+          "observed": {
+            "chosen_placements": 3,
+            "baseline_placements": 2,
+            "chosen_score": 744.4,
+            "baseline_score": 430.65
+          },
+          "duration_ms": 397
+        },
+        {
+          "name": "placement-route-explanation",
+          "status": "passed",
+          "observed": {
+            "route_text": "F1 lobby → F1 lift → F2 lift → F3 lift → F4 lift → F5 lift → F5 lobby → Resource door (assumed 1 minute)"
+          },
+          "duration_ms": 39
+        },
+        {
+          "name": "planned-horizontal-fit",
+          "status": "passed",
+          "observed": {
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 0
+        },
+        {
+          "name": "changed-seed-invalidates-plan",
+          "status": "passed",
+          "observed": {
+            "disabled_after_change": true,
+            "regenerated": true
+          },
+          "duration_ms": 370
+        },
+        {
+          "name": "three-browser-reservations",
+          "status": "passed",
+          "observed": {
+            "browser_reservations": 3,
+            "server_booking_posts": 0
+          },
+          "duration_ms": 378
+        },
+        {
+          "name": "reservations-survive-reload",
+          "status": "passed",
+          "observed": {
+            "reservations_after_reload": 3
+          },
+          "duration_ms": 978
+        },
+        {
+          "name": "downloaded-ics-calendar",
+          "status": "passed",
+          "observed": {
+            "download": "1920x1080-reservations.ics",
+            "events": 3,
+            "simulation_labels": 3,
+            "floating_times": true
+          },
+          "duration_ms": 116
+        },
+        {
+          "name": "cancel-all-simulation-reservations",
+          "status": "passed",
+          "observed": {
+            "remaining_reservations": 0
+          },
+          "duration_ms": 954
+        },
+        {
+          "name": "one-step-unavailable-actions",
+          "status": "passed",
+          "observed": {
+            "horizon": 1,
+            "inspect": "N/A",
+            "wait": "N/A"
+          },
+          "duration_ms": 306
+        },
+        {
+          "name": "hmm-three-report-forecast",
+          "status": "passed",
+          "observed": {
+            "reports": 3,
+            "predictive_next": 0.7341374487056491
+          },
+          "duration_ms": 316
+        },
+        {
+          "name": "apply-hmm-sequence-to-resource",
+          "status": "passed",
+          "observed": {
+            "resource_id": "F4-IM01",
+            "report_count": 3,
+            "reservations_created": 0
+          },
+          "duration_ms": 60
+        },
+        {
+          "name": "impossible-request-stays-unassigned",
+          "status": "passed",
+          "observed": {
+            "assignments": 0,
+            "unassigned": 1,
+            "commit_disabled": true
+          },
+          "duration_ms": 457
+        },
+        {
+          "name": "invalid-time-ui-error",
+          "status": "passed",
+          "observed": {
+            "invalid_request_added": false,
+            "visible_error": true
+          },
+          "duration_ms": 115
+        },
+        {
+          "name": "long-title-horizontal-fit",
+          "status": "passed",
+          "observed": {
+            "title_length": 100,
+            "viewport_width": 1920,
+            "document_width": 1920,
+            "body_width": 1920
+          },
+          "duration_ms": 449
+        },
+        {
+          "name": "no-uncaught-page-errors",
+          "status": "passed",
+          "observed": {
+            "uncaught_errors": 0
+          },
+          "duration_ms": 1
+        }
+      ],
+      "screenshots": [
+        "1920x1080-initial.png",
+        "1920x1080-specialist-plan.png",
+        "1920x1080-long-title-plan.png"
+      ],
+      "page_errors": [],
+      "api_requests": [
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "GET",
+          "path": "/api/state"
+        },
+        {
+          "method": "POST",
+          "path": "/api/decision"
+        },
+        {
+          "method": "POST",
+          "path": "/api/occupancy"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        },
+        {
+          "method": "POST",
+          "path": "/api/plan"
+        }
+      ]
+    }
+  ],
+  "note": "Results and screenshots come only from this invocation. No API responses are mocked. Browser-owned simulation bookings use fresh profiles.",
+  "browser_version": "151.0.7922.34",
+  "finished_at": "2026-11-21T16:07:45.640Z",
+  "totals": {
+    "viewports_run": 5,
+    "checks_passed": 29,
+    "checks_failed": 4,
+    "checks_not_run": 67
+  }
+}

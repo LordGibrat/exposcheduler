@@ -1,0 +1,9 @@
+{
+  "checked_on": "2026-11-21",
+  "deployment_id": "dpl_7KAeE6KpMaBbq5HeNywgkJ7SFP1T",
+  "url": "https://expo-smart-scheduler.vercel.app/",
+  "status": 200,
+  "css_matches_uploaded_source": true,
+  "change": "Flatten coplanar button context and keep hover/focus/selected base paint order.",
+  "browser_verification": "pending responsive-3 rerun"
+}

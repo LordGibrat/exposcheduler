@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-23T09:26:10.701Z",
+  "deployment_id": "dpl_G99bv5u7VsRh4dekMGJP7gdPUrPP",
+  "url": "https://expo-smart-scheduler.vercel.app",
+  "scope": "HTTP source and state API checks only; not browser rendering or interaction.",
+  "checks": [
+    {
+      "path": "/find.html",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/find.css",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/experience.js",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/find.js",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/style.css",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/browser-storage.js",
+      "status": 200,
+      "source_matches": true
+    },
+    {
+      "path": "/api/state?date=2026-12-01",
+      "status": 200,
+      "storage_mode": "browser",
+      "resources": 23,
+      "bookings": 0,
+      "date": "2026-12-01"
+    },
+    {
+      "path": "/api/state?date=invalid",
+      "status": 400,
+      "error": "date must use YYYY-MM-DD"
+    }
+  ]
+}

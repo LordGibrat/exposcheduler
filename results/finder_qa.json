@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-11-23T09:26:20.342435+00:00",
+  "status": "available checks passed; finder real-browser run pending",
+  "preserved_sources": {
+    "engine.py": true,
+    "static/app.js": true,
+    "static/style.css": true,
+    "static/browser-storage.js": true
+  },
+  "html_structure": {
+    "unique_ids": 35,
+    "label_targets_valid": true,
+    "referenced_assets_exist": true
+  },
+  "javascript": {
+    "tests": 53,
+    "pass": 53,
+    "fail": 0,
+    "skipped": 0,
+    "finder_unit_tests": 18,
+    "atlas_interaction_tests": 7,
+    "scope": "Actual page IDs, small test DOM and fixture responses; not browser rendering."
+  },
+  "python": {
+    "run": 95,
+    "passed": 94,
+    "skipped": 1,
+    "failures": 0,
+    "errors": 0
+  },
+  "syntax_checked": [
+    "static/find.js",
+    "static/experience.js",
+    "tests/finder_e2e.cjs"
+  ],
+  "http": {
+    "report": "finder_http_checks.json",
+    "checks_passed": 10
+  },
+  "new_finder_browser_suite": {
+    "status": "not_run",
+    "planned_checks": 100,
+    "runner": "tests/finder_e2e.cjs",
+    "runner_sha256": "7bf7402338e9fd98bd472164958c4dd6b004ea433e19a03dcc90d8d8af46f640",
+    "reason": "Matching Chromium executable unavailable; launch stopped before any browser checks. See last_attempt for actual diagnostics.",
+    "last_attempt": {
+      "started_at": "2026-11-23T09:06:59.099Z",
+      "status": "blocked",
+      "totals": {
+        "viewports_planned": 5,
+        "viewports_started": 0,
+        "viewports_completed": 0,
+        "checks_planned": 100,
+        "checks_passed": 0,
+        "checks_failed": 0,
+        "checks_not_run": 100
+      },
+      "blocked_reason": "Chromium could not launch: browserType.launch: Executable doesn't exist at C:\\Users\\user\\AppData\\Local\\Packages\\openai.codex_2p2nqsd0c76g0\\AC\\#!sandbox.{8f6a924d-4d14-45c0-b434-468ce1b79666}\\ms-playwright\\chromium_headless_shell-1234\\chrome-headless-shell-win64\\chrome-headless-shell.exe\n\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551 Looks like Playwright was just installed or updated.       \u2551\n\u2551 Please run the following command to download new browsers: \u2551\n\u2551                                                            \u2551\n\u2551     npx playwright install                                 \u2551\n\u2551                                                            \u2551\n\u2551 <3 Playwright Team                                         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d"
+    }
+  },
+  "historical_workspace_browser_suite": {
+    "checks_passed": 100,
+    "date": "2026-11-21",
+    "report": "browser_e2e_verified_run.json",
+    "scope": "Original workspace only; not finder coverage."
+  }
+}

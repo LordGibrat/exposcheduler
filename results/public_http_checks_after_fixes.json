@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-11-21",
+  "url": "https://expo-smart-scheduler.vercel.app/",
+  "deployment_id": "dpl_FNHy46h6Gy4wtQvhEasUrmUQwUA5",
+  "deployment_state": "READY",
+  "checks": [
+    {
+      "path": "/style.css",
+      "status": 200,
+      "matches_uploaded_source": true
+    },
+    {
+      "path": "/app.js",
+      "status": 200,
+      "matches_uploaded_source": true
+    },
+    {
+      "path": "/api/state?date=2026-12-01",
+      "status": 200,
+      "resources": 23,
+      "storage_mode": "browser"
+    }
+  ],
+  "note": "The earlier user-run browser report remains the functional evidence. These HTTP checks confirm the correction was published; a new browser run is pending."
+}

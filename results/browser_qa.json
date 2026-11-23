@@ -1,0 +1,73 @@
+{
+  "recorded_on": "2026-11-21",
+  "status": "passed",
+  "scope": "Verified original 20-scenario browser suite across five emulated Chromium viewports",
+  "verified_report": "browser_e2e_verified_run.json",
+  "report_sha256": "0e78d65ae13c0a699b6b510714ecd85b45453cb34e24b3dc73e48ff83029dc82",
+  "verified_runner": "tests/browser_e2e_verified.cjs",
+  "runner_sha256": "19b6afa5259f0a2b13d34e4a8202228324fb4221433e3a44b167c78afe6edcbc",
+  "reproduce": "npm run test:browser:verified",
+  "started_at": "2026-11-21T16:41:11.422Z",
+  "finished_at": "2026-11-21T16:41:51.561Z",
+  "browser": "Chromium 151.0.7922.34",
+  "totals": {
+    "viewports_run": 5,
+    "checks_passed": 100,
+    "checks_failed": 0,
+    "checks_not_run": 0
+  },
+  "viewports": [
+    {
+      "id": "360x800",
+      "checks_passed": 20,
+      "status": "passed"
+    },
+    {
+      "id": "390x844",
+      "checks_passed": 20,
+      "status": "passed"
+    },
+    {
+      "id": "768x1024",
+      "checks_passed": 20,
+      "status": "passed"
+    },
+    {
+      "id": "1440x1000",
+      "checks_passed": 20,
+      "status": "passed"
+    },
+    {
+      "id": "1920x1080",
+      "checks_passed": 20,
+      "status": "passed"
+    }
+  ],
+  "visual_review": {
+    "screenshots_inspected": 15,
+    "blocking_issues_observed": 0,
+    "note": "Initial, specialist-plan and long-title views; viewport captures are not a complete accessibility audit."
+  },
+  "resolved_observed_failures": [
+    "Horizontal page overflow on narrow/tablet viewports.",
+    "Native pointer selection of the fourth-floor schematic button."
+  ],
+  "final_ui_changes": [
+    "300px centred transformed stack frame below 1050px.",
+    "Coplanar floor buttons use flat hit testing and stable paint order; parent 3D projection retained."
+  ],
+  "limits": [
+    "Reduced motion was enabled.",
+    "Mobile/touch emulation, not physical phones or tablets.",
+    "Chromium only; Firefox and Safari not tested.",
+    "3D Enter/Space assertions in the extended diagnostic runner were not executed.",
+    "Full accessibility, ordinary-motion interaction and real-campus performance were not established."
+  ],
+  "diagnostic_runner": {
+    "path": "tests/browser_e2e.cjs",
+    "revision": "2026-11-21-responsive-3",
+    "status": "syntax_checked_not_executed"
+  },
+  "live_url": "https://expo-smart-scheduler.vercel.app/",
+  "verified_deployment_id": "dpl_7KAeE6KpMaBbq5HeNywgkJ7SFP1T"
+}
