@@ -2,319 +2,319 @@ TAP version 13
 # Subtest: browser mode reads canonical inventory but keeps personal reservations in local storage
 ok 1 - browser mode reads canonical inventory but keeps personal reservations in local storage
   ---
-  duration_ms: 10.345
+  duration_ms: 9.8962
   type: 'test'
   ...
 # Subtest: planner receives current personal bookings without changing the submitted request object
 ok 2 - planner receives current personal bookings without changing the submitted request object
   ---
-  duration_ms: 1.8865
+  duration_ms: 1.0343
   type: 'test'
   ...
 # Subtest: same resource overlap rejects the whole commit without a storage write
 ok 3 - same resource overlap rejects the whole commit without a storage write
   ---
-  duration_ms: 2.9496
+  duration_ms: 1.6073
   type: 'test'
   ...
 # Subtest: parent lab and child iMac bookings block each other in both directions
 ok 4 - parent lab and child iMac bookings block each other in both directions
   ---
-  duration_ms: 5.6607
+  duration_ms: 4.6946
   type: 'test'
   ...
 # Subtest: siblings and adjacent half-open intervals may coexist
 ok 5 - siblings and adjacent half-open intervals may coexist
   ---
-  duration_ms: 2.3739
+  duration_ms: 2.0174
   type: 'test'
   ...
 # Subtest: a mixed batch with one new conflict is atomic
 ok 6 - a mixed batch with one new conflict is atomic
   ---
-  duration_ms: 1.6068
+  duration_ms: 0.9333
   type: 'test'
   ...
 # Subtest: cached plan is immutable and has a bounded lifetime
 ok 7 - cached plan is immutable and has a bounded lifetime
   ---
-  duration_ms: 1.2967
+  duration_ms: 0.8615
   type: 'test'
   ...
 # Subtest: cached request constraints and title match the snapshot actually sent for planning
 ok 8 - cached request constraints and title match the snapshot actually sent for planning
   ---
-  duration_ms: 0.7813
+  duration_ms: 0.5889
   type: 'test'
   ...
 # Subtest: duplicate commit and client-supplied assignment tampering are rejected
 ok 9 - duplicate commit and client-supplied assignment tampering are rejected
   ---
-  duration_ms: 1.2628
+  duration_ms: 0.8402
   type: 'test'
   ...
 # Subtest: days are independent and cancellation removes only the requested personal booking
 ok 10 - days are independent and cancellation removes only the requested personal booking
   ---
-  duration_ms: 2.0449
+  duration_ms: 1.9298
   type: 'test'
   ...
 # Subtest: malformed, unknown-resource and overlapping persisted data fail visibly without being overwritten
 ok 11 - malformed, unknown-resource and overlapping persisted data fail visibly without being overwritten
   ---
-  duration_ms: 2.4923
+  duration_ms: 1.833
   type: 'test'
   ...
 # Subtest: blocked localStorage reads and writes are errors, not false persistence success
 ok 12 - blocked localStorage reads and writes are errors, not false persistence success
   ---
-  duration_ms: 1.4223
+  duration_ms: 1.0689
   type: 'test'
   ...
 # Subtest: ICS export escapes user text, preserves Unicode and identifies simulation scope
 ok 13 - ICS export escapes user text, preserves Unicode and identifies simulation scope
   ---
-  duration_ms: 2.5857
+  duration_ms: 2.1803
   type: 'test'
   ...
 # Subtest: ICS byte folding preserves long Unicode text across physical lines
 ok 14 - ICS byte folding preserves long Unicode text across physical lines
   ---
-  duration_ms: 1.8144
+  duration_ms: 0.7835
   type: 'test'
   ...
 # Subtest: shared web-lock provider serializes competing commits across adapter instances
 ok 15 - shared web-lock provider serializes competing commits across adapter instances
   ---
-  duration_ms: 1.0942
+  duration_ms: 1.4652
   type: 'test'
   ...
 # Subtest: without Web Locks the adapter labels coordination single-tab-only
 ok 16 - without Web Locks the adapter labels coordination single-tab-only
   ---
-  duration_ms: 0.8692
+  duration_ms: 1.2867
   type: 'test'
   ...
 # Subtest: server mode preserves the SQLite API transport instead of creating local browser bookings
 ok 17 - server mode preserves the SQLite API transport instead of creating local browser bookings
   ---
-  duration_ms: 0.5014
+  duration_ms: 0.5765
   type: 'test'
   ...
 # Subtest: journey progress maps actual result/review states without inventing success
 ok 18 - journey progress maps actual result/review states without inventing success
   ---
-  duration_ms: 1.6098
+  duration_ms: 1.175
   type: 'test'
   ...
 # Subtest: enhancer initialization preserves an existing type, group, time and starting floor
 ok 19 - enhancer initialization preserves an existing type, group, time and starting floor
   ---
-  duration_ms: 42.1033
+  duration_ms: 43.1075
   type: 'test'
   ...
 # Subtest: iMac intent uses native field events, enforces one person and invalidates the existing plan
 ok 20 - iMac intent uses native field events, enforces one person and invalidates the existing plan
   ---
-  duration_ms: 12.1302
+  duration_ms: 15.1545
   type: 'test'
   ...
 # Subtest: a floor choice updates the real starting-floor field and invalidates a recommendation
 ok 21 - a floor choice updates the real starting-floor field and invalidates a recommendation
   ---
-  duration_ms: 9.0463
+  duration_ms: 7.5687
   type: 'test'
   ...
 # Subtest: journey UI follows the actual controller result and explicit review state
 ok 22 - journey UI follows the actual controller result and explicit review state
   ---
-  duration_ms: 9.6712
+  duration_ms: 7.6125
   type: 'test'
   ...
 # Subtest: floor buttons support native keyboard navigation with Home and End
 ok 23 - floor buttons support native keyboard navigation with Home and End
   ---
-  duration_ms: 6.21
+  duration_ms: 7.5946
   type: 'test'
   ...
 # Subtest: destroy removes observer activity and leaves original search controls usable
 ok 24 - destroy removes observer activity and leaves original search controls usable
   ---
-  duration_ms: 8.1489
+  duration_ms: 5.5726
   type: 'test'
   ...
 # Subtest: simple search produces one exact-window request using the existing hill method
 ok 25 - simple search produces one exact-window request using the existing hill method
   ---
-  duration_ms: 6.2636
+  duration_ms: 4.9949
   type: 'test'
   ...
 # Subtest: calendar validation handles leap dates, invalid dates and supported years
 ok 26 - calendar validation handles leap dates, invalid dates and supported years
   ---
-  duration_ms: 0.412
+  duration_ms: 0.4362
   type: 'test'
   ...
 # Subtest: opening and closing half-hour boundaries are valid but overflow is rejected
 ok 27 - opening and closing half-hour boundaries are valid but overflow is rejected
   ---
-  duration_ms: 1.0162
+  duration_ms: 0.7603
   type: 'test'
   ...
 # Subtest: people, kind, equipment, floor and title inputs are validated explicitly
 ok 28 - people, kind, equipment, floor and title inputs are validated explicitly
   ---
-  duration_ms: 0.8237
+  duration_ms: 0.8788
   type: 'test'
   ...
 # Subtest: generated results escape text and distinguish active AI from inactive histories
 ok 29 - generated results escape text and distinguish active AI from inactive histories
   ---
-  duration_ms: 26.3794
+  duration_ms: 32.7404
   type: 'test'
   ...
 # Subtest: startup wires the actual page IDs and loads the shared sample inventory
 ok 30 - startup wires the actual page IDs and loads the shared sample inventory
   ---
-  duration_ms: 8.1857
+  duration_ms: 4.792
   type: 'test'
   ...
 # Subtest: search refreshes state then plans once and confirms only the issued plan ID
 ok 31 - search refreshes state then plans once and confirms only the issued plan ID
   ---
-  duration_ms: 7.3327
+  duration_ms: 5.0285
   type: 'test'
   ...
 # Subtest: iMac selection fixes one person and leaving the type restores previous group size
 ok 32 - iMac selection fixes one person and leaving the type restores previous group size
   ---
-  duration_ms: 3.4875
+  duration_ms: 2.0081
   type: 'test'
   ...
 # Subtest: changing inputs after choosing invalidates the plan and confirmation
 ok 33 - changing inputs after choosing invalidates the plan and confirmation
   ---
-  duration_ms: 7.5442
+  duration_ms: 6.2466
   type: 'test'
   ...
 # Subtest: late search replies are discarded when details change during the request
 ok 34 - late search replies are discarded when details change during the request
   ---
-  duration_ms: 12.8523
+  duration_ms: 9.0298
   type: 'test'
   ...
 # Subtest: duplicate confirmation is blocked while one save is pending
 ok 35 - duplicate confirmation is blocked while one save is pending
   ---
-  duration_ms: 4.4409
+  duration_ms: 5.8711
   type: 'test'
   ...
 # Subtest: conflicting or expired confirmation requires a fresh search and refreshes reservations
 ok 36 - conflicting or expired confirmation requires a fresh search and refreshes reservations
   ---
-  duration_ms: 3.3228
+  duration_ms: 3.4834
   type: 'test'
   ...
 # Subtest: empty results are explicit and cannot be reserved
 ok 37 - empty results are explicit and cannot be reserved
   ---
-  duration_ms: 3.5361
+  duration_ms: 2.515
   type: 'test'
   ...
 # Subtest: cancellation updates the same simulation store and invalidates recommendations
 ok 38 - cancellation updates the same simulation store and invalidates recommendations
   ---
-  duration_ms: 4.668
+  duration_ms: 7.3943
   type: 'test'
   ...
 # Subtest: invalid search inputs do not send a planning request
 ok 39 - invalid search inputs do not send a planning request
   ---
-  duration_ms: 2.2336
+  duration_ms: 1.5278
   type: 'test'
   ...
 # Subtest: a failed inventory request leaves search available and the next search retries
 ok 40 - a failed inventory request leaves search available and the next search retries
   ---
-  duration_ms: 3.9199
+  duration_ms: 2.6614
   type: 'test'
   ...
 # Subtest: blocked storage prevents planning but can recover after the next state check
 ok 41 - blocked storage prevents planning but can recover after the next state check
   ---
-  duration_ms: 4.2473
+  duration_ms: 3.8893
   type: 'test'
   ...
 # Subtest: reservations from a different search date are not displayed
 ok 42 - reservations from a different search date are not displayed
   ---
-  duration_ms: 2.8379
+  duration_ms: 3.1201
   type: 'test'
   ...
 # Subtest: initialization uses actual HTML IDs and loads inventory, controls and labs
 ok 43 - initialization uses actual HTML IDs and loads inventory, controls and labs
   ---
-  duration_ms: 22.3217
+  duration_ms: 36.3901
   type: 'test'
   ...
 # Subtest: floor, resource type and text filters combine without affecting inventory
 ok 44 - floor, resource type and text filters combine without affecting inventory
   ---
-  duration_ms: 14.2452
+  duration_ms: 12.8347
   type: 'test'
   ...
 # Subtest: examples clone real scenarios and request form validates the time window
 ok 45 - examples clone real scenarios and request form validates the time window
   ---
-  duration_ms: 16.2116
+  duration_ms: 13.2742
   type: 'test'
   ...
 # Subtest: planner sends documented payload and reservation sends only issued plan_id
 ok 46 - planner sends documented payload and reservation sends only issued plan_id
   ---
-  duration_ms: 21.4186
+  duration_ms: 17.8028
   type: 'test'
   ...
 # Subtest: changed probability inputs invalidate a plan and prevent stale reservation
 ok 47 - changed probability inputs invalidate a plan and prevent stale reservation
   ---
-  duration_ms: 10.6156
+  duration_ms: 11.225
   type: 'test'
   ...
 # Subtest: request changes during asynchronous search mark its result stale
 ok 48 - request changes during asynchronous search mark its result stale
   ---
-  duration_ms: 9.9295
+  duration_ms: 9.7975
   type: 'test'
   ...
 # Subtest: quoted user titles stay escaped in queue, plan, reservation and timeline markup
 ok 49 - quoted user titles stay escaped in queue, plan, reservation and timeline markup
   ---
-  duration_ms: 15.9732
+  duration_ms: 14.4263
   type: 'test'
   ...
 # Subtest: horizon-one null inspect/wait values render as N/A, with no action executed
 ok 50 - horizon-one null inspect/wait values render as N/A, with no action executed
   ---
-  duration_ms: 7.5061
+  duration_ms: 7.686
   type: 'test'
   ...
 # Subtest: search, reservation and lab errors restore controls and show visible messages
 ok 51 - search, reservation and lab errors restore controls and show visible messages
   ---
-  duration_ms: 8.6771
+  duration_ms: 11.3432
   type: 'test'
   ...
 # Subtest: HMM sequence is validated, passed to planner, and creates no booking
 ok 52 - HMM sequence is validated, passed to planner, and creates no booking
   ---
-  duration_ms: 8.4072
+  duration_ms: 11.0604
   type: 'test'
   ...
 # Subtest: simulation cancellation uses DELETE and calendar export tracks selected date
 ok 53 - simulation cancellation uses DELETE and calendar export tracks selected date
   ---
-  duration_ms: 13.7597
+  duration_ms: 19.0388
   type: 'test'
   ...
 1..53
@@ -325,4 +325,4 @@ ok 53 - simulation cancellation uses DELETE and calendar export tracks selected 
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 334.9218
+# duration_ms 321.7594

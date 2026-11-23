@@ -51,7 +51,17 @@ calendar demonstrates local booking logic with simulated reservations.
 
 ## Run locally
 
-Requires **Python 3.12+**. From the complete extracted project folder:
+Public source repository: **https://github.com/LordGibrat/exposcheduler**.
+Compare the source package with `MANIFEST.sha256` and verify the setup below.
+
+Clone the repository or extract the complete source package:
+
+```bash
+git clone https://github.com/LordGibrat/exposcheduler.git
+cd exposcheduler
+```
+
+Requires **Python 3.12+**. From the project folder:
 
 ```bash
 python server.py
@@ -166,8 +176,10 @@ npm run test:browser
 
 | Recorded check | Result |
 | --- | --- |
-| Python tests | 94 passed; one live-loopback check skipped because the environment blocked the connection |
+| Python tests | 95 run: 94 passed; one live-loopback check skipped for Windows socket error 10013 |
 | JavaScript controller/storage tests | 53 passed, including 18 finder checks and seven atlas interaction checks |
+| Published finder asset/API checks | 10 passed, including the atlas interaction asset |
+| Atlas finder browser suite | 100 planned checks; not run |
 | Recorded AI-workspace browser suite (21 November 2026) | 100 passed: 20 at each of five viewport sizes, with no failures or unexecuted checks |
 | Tiny synthetic scheduling cases | Hill climbing matched independent exhaustive enumeration in 24/24 cases and improved on first fit in 15/24 |
 
