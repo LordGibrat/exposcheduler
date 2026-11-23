@@ -1,0 +1,5 @@
+# Optional: rebuild the supplied documents. Not needed to run the application.
+reportlab==4.4.9
+python-docx==1.2.0
+# Optional document preview/review:
+pypdfium2==5.13.0

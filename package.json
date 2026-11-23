@@ -1,0 +1,17 @@
+{
+  "name": "expo-smart-scheduler",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Explainable Expo scheduling simulation with portable browser checks",
+  "scripts": {
+    "test": "node --test tests/test_frontend.cjs tests/test_browser_storage.cjs tests/test_finder.cjs tests/test_experience.cjs",
+    "test:browser": "node tests/browser_e2e_verified.cjs",
+    "test:browser:verified": "node tests/browser_e2e_verified.cjs",
+    "test:browser:diagnostic": "node tests/browser_e2e.cjs",
+    "test:browser:finder": "node tests/finder_e2e.cjs",
+    "check:browser": "node --check tests/browser_e2e.cjs && node --check tests/finder_e2e.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}
